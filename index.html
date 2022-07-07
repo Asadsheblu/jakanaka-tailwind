@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaka Naka Production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                yellow: "#FECC02",
+                clifford: '#da373d',
+                
+              }
+              
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+   
+    <header class="w-full h-20 flex justify-center absolute bg-white">
+        <nav class="w-4/5 h-full flex justify-between items-center font-bebas">
+          <h1 class="text-3xl">Jhaka Naka Production</h1>
+          <ul class="gap-x-5 text-xl hidden md:flex">
+            <a href="#about"><li class="cursor-pointer">About Us</li></a>
+  
+            <li class="cursor-pointer">Our Movies</li>
+            <li class="cursor-pointer">Services</li>
+          </ul>
+        </nav>
+      </header>
+      <!--BAnner-->
+      <main class="h-screen bg-[url('./images/banner.jpg')] bg-cover flex items-center" >
+          <div class="text-white uppercase m-20">
+          <h1 class="text-xl">Movie production studio</h1> 
+          <h1 class="text-5xl">Films MAde to <br>
+            <span class="text-5xl text-orange-300">Perfection</span> 
+          </h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, <br> luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <button
+            class="border-2 px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow transition-all"
+          >
+            Discover More
+          </button>
+        </div>
+      
+      </main>
+      <section class=" border-2 p-10 border-black m-3">
+        <div class="grid lg:grid-cols-2">
+          <div class="rounded shadow-lg bg-light  ">
+            <img class=" w-100 p-10 " src="images/camera-man.jpg" alt="">
+           <h1 class="uppercase text-black font-bold text-center text-2xl ">23 years of Experience</h1>
+          </div>
+         
+            <div class="text-black uppercase m-20">
+              <p>ABOUT US</p>
+              <h1 class="text-4xl font-bold">FIlming Experience
+                Just Got better</h1> 
+             
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, <br> luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+              <button
+                class="border-2 px-5 py-2 text-xl mt-10 hover:bg-yellow hover:text-black hover:border-yellow transition-all"
+              >
+                Discover More
+              </button>
+            </div>
+          </div>
+
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 m-5 gap-x-20">
+      <div class="border-t-2 border-black " >
+        <h1 class="text-4xl text-black font-bold ">OUR VISION</h1>
+        <p class="pr-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores impedit adipisci a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita?</p>
+
+      </div>
+      <div class="border-t-2 border-black " >
+        <h1 class="text-4xl text-black font-bold uppercase">OUR Mission</h1>
+        <p class="pr-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores impedit adipisci a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita?</p>
+      </div>
+      <div class="border-t-2 border-black ">
+        <h1 class="text-4xl text-black font-bold uppercase">OUR Motto</h1>
+        <p class="pr-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores impedit adipisci a?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita?</p>
+      </div>
+      
+    </div>
+      </section>
+
+
+<section class="bg-slate-300">
+  <h1 class="p-5">OUR MOVIES</h1>
+  <div class="flex justify-between m-10 ">
+  <h1 class="text-4xl font-bold uppercase">Movie collection</h1>
+  <button
+  class="border-2 px-5 py-2   mr-5 hover:bg-yellow hover:text-black hover:border-yellow transition-all"
+>
+ SEE MORE MOVIES
+</button>
+</div>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 m-10 gap-20">
+      
+          <div class="border  border-black">
+            
+            <a
+              href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+              target="_blank"
+            >
+              <div
+                class="w-full h-full bg-cover bg-center flex justify-center items-center group relative cursor-pointer"
+              >
+              <img class=" w-full h-full bg-cover bg-cente  p-5" src="images/fractured.jpg" alt="">
+                <div
+                  class="h-full w-full absolute top-0 bottom-0 left-0 right-0 bg-black opacity-75 hidden z-0 group-hover:block"
+                ></div>
+                <h1
+                  class="font-bebas text-3xl text-white z-10 hidden group-hover:block"
+                >
+                  Tenet
+                </h1>
+              </div>
+            </a>
+        </div>
+
+        <div class="border  border-black">
+          <img class=" w-full h-full bg-cover bg-cente p-5" src="images/inception.jpg" alt="">
+      </div>
+      
+      <div class="border border-black">
+        <img class=" w-full h-full bg-cover bg-cente  p-5" src="images/interstellar.jpg" alt="">
+    </div>
+        
+    <div class="border  border-black">
+      <img class=" w-full h-full bg-cover bg-cente p-5" src="images/tenet.jpg" alt="">
+  </div>
+      </div>
+
+</section>
+<section class="m-5">
+  <h1 class="uppercase text-center">service</h1>
+  <h1 class="uppercase text-4xl font-bold text-center">what we offer</h1>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 m-10 gap-16">
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/camera.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">movies director</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/3d-glasss.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">3D MOVIES</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/director-chair.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">Film maker</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+       
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/film.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">Studio Production</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/theater.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">Drama Movies</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/rim.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">Rolling Production</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/cut-board.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">Movie Production</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        <div class="border-2 border-black rounded-lg h-60">
+          <img class=" w-20 ml-20 mt-5" src="images/icons/count-down.png" alt="">
+          <h1 class="text-center text-xl font-bold uppercase">actor action</h1>
+          <p class="p-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, optio?</p>
+        </div>
+        </div>
+
+      </div>
+</section>
+<footer class=" bg-[url('./images/footer-bg.jpg')] p-20">
+  <h1 class="text-5xl text-center font-bold uppercase text-white ">jhaka naka production</h1>
+  <h2 class="text-xl text-center font-bold uppercase text-white p-3">next level experience</h2>
+  <p class="text-center text-white ">Feugiat nibh litora semper proin   nullam facilisi <br>
+
+    volutpat ex ullamcorper.</p>
+    <p class="text-white text-center pt-20">Copyright © 2021 Jhaka Naka Production, All rights reserved. Present by Asaduz Zaman</p>
+
+</footer>
+
+</body>
+</html>
